@@ -41,7 +41,7 @@ nav ul li a {
 
 .container {
   width: 100%;
-  display: inline-flex;
+  display: inline-flex !important;
   justify-content: space-evenly;
   align-items: center;
 }
@@ -256,7 +256,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 480px), (min-width: 376px) {
+@media screen and (max-width: 480px) {
   .contact-form,
   .contact-details {
     max-width: 90%;
