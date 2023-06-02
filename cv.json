@@ -1,0 +1,18 @@
+{
+  "name": "I'm Vande Nikolovski and I'm a UX/UI designer",
+  "email": "vande.nikolovski@chasacademy.se",
+  "education": "UX/UI-designer med frontendkompetens, Chas Academy",
+  "work_experience": "UX/UI-designer at CABSAB",
+  "skills": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React",
+    "NodeJs",
+    "Express",
+    "MongoDB",
+    "MySQL",
+    "Agile",
+    "Git"
+  ]
+}

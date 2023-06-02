@@ -20,9 +20,9 @@
       <h1>About Me</h1>
       <p>Here I am, and here you can read all about me.</p>
     </div>
-
     <div class="about__container">
-      <h2 id="about__title">I'm Vande and I'm a UX/UI designer</h2>
+      <!-- <h2 id="about__title">I'm Vande and I'm a UX/UI designer</h2> -->
+      <div id="cv-container"></div>
       <p>
         My name is Vande Nikolovski. I am a passionate and professional Full
         Stack Developer with 2 years of commercial experience. I create high
@@ -31,7 +31,6 @@
         requirements. My main experience is in front-end but I am also equally
         passionate for design.
       </p>
-      <br />
       <p>
         I am producing usable and highly scalable web software solutions. I have
         strong interpersonal skills and proven record of communicating with
@@ -40,6 +39,10 @@
         met. I can also quickly and efficiently join your team using
         continuous-integration methods and tools such as Git and Agile.
       </p>
+      <br />
+      <button class="about__button" id="generate-btn">
+        Get more info......
+      </button>
     </div>
 
     <!-- Additional content goes here -->
@@ -51,5 +54,27 @@
         </div>
       </div>
     </footer>
+    <script>
+      // Fetch the CV data from the JSON file
+      fetch('cv.json')
+        .then((response) => response.json())
+        .then((cvData) => {
+          // Generate HTML markup for displaying the CV
+          const cvMarkup = `
+          <h2>${cvData.name}</h2>
+          <p><b>Email:</b> ${cvData.email}</p>
+          <p><b>Education:</b> ${cvData.education}</p>
+          <p><b>Work Experience:</b> ${cvData.work_experience}</p>
+          <p><b>Skills:</b> ${cvData.skills.join(', ')}</p>
+        `;
+
+          // Render the CV markup in the cv-container div
+          const cvContainer = document.getElementById('cv-container');
+          cvContainer.innerHTML = cvMarkup;
+        })
+        .catch((error) => {
+          console.error('Error loading CV data:', error);
+        });
+    </script>
   </body>
 </html>

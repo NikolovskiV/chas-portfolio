@@ -57,20 +57,55 @@ nav ul li a {
   background-color: #ede440;
   border-radius: 30px;
   border: none;
+  letter-spacing: 1px;
+  font-size: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.511);
+}
+
+#btn:hover {
+  background-color: #e45757cb;
+  border: 1px solid black;
+  color: #fff;
+  font-weight: bolder;
+  letter-spacing: 3px;
 }
 
 /* about section */
-
+#cv-container {
+  width: 70%;
+  margin: auto;
+  padding-top: 10px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 .about__container {
   width: 70%;
   margin: auto;
-  padding-top: 100px;
+  padding-top: 10px;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 #about__title {
   text-align: center;
+}
+
+.about__button {
+  width: 50%;
+  height: 50px;
+  font-weight: bold;
+  background-color: #ede440;
+  border: 1px solid rgba(0, 0, 0, 0.511);
+  border-radius: 30px;
+}
+
+.about__button:hover {
+  background-color: #e45757cb;
+  border: 1px solid black;
+  color: #fff;
+  font-weight: bold;
 }
 
 /* projects section */
