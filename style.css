@@ -125,10 +125,10 @@ nav ul li a {
   margin: 0 auto;
 }
 
-.gallery img {
+/* .gallery img {
   width: 100%;
   height: 200px;
-}
+} */
 
 /* services section */
 
@@ -240,6 +240,58 @@ footer {
   font-style: italic;
   padding: 5px;
   margin: 0;
+}
+
+/* slideshow section */
+.slideshow-container {
+  max-width: 70%;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slideshow-container img {
+  width: 100%;
+  height: 500px;
+}
+
+.slideshow-container .slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slideshow-container .slide {
+  flex: 0 0 100%;
+}
+
+.slideshow-container .prev,
+.slideshow-container .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  z-index: 2;
+}
+
+.slideshow-container .prev {
+  left: 10px;
+}
+
+.slideshow-container .next {
+  right: 10px;
+}
+
+@media (max-width: 768px) {
+  .slideshow-container .prev,
+  .slideshow-container .next {
+    font-size: 20px;
+    padding: 5px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
